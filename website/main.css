@@ -1,0 +1,86 @@
+html, body {
+	height: 100%;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	background: url('bg.png');
+    position: relative;
+}
+
+#arrow, #selfie {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#arrow {
+	height: 10%;
+	margin-bottom: 30px;
+}
+
+#selfie {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 5px solid #545;
+}
+
+h1, h2, p {
+	margin: 0;
+	padding: 0 20px 0;
+	text-align: center;
+	color: #ddd;
+}
+
+p {
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+
+#content {
+	background-color: steelblue;
+	border-radius: 25px;
+	margin: 30px auto 10px;
+	width: 75%;
+}
+
+/***********************
+FOOTER
+***********************/
+
+footer {
+	background-color: #545;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	height: 15%;
+}
+:target {
+	background-color: #556;
+}
+
+.container::before {    /* create a full-height inline block pseudo=element */
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;  /* vertical alignment of the inline element */
+    height: 100%;
+}
+
+.contactPhoto {
+	display: inline-block;
+    vertical-align: middle;	
+    height: 50%;
+    margin: 25px 30px;
+	border: 3px solid black;
+	border-radius: 50%;
+}
+
+.contactPhoto:hover {
+	border: 3px solid white;
+
+}
+
+

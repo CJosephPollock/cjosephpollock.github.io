@@ -1,0 +1,96 @@
+/************
+All Page Styling (Header/Footer)
+************/
+html {
+	font-family: 'Cabin', sans-serif;
+}
+
+header {
+	background-color: #556;
+	overflow: auto;
+}
+body {
+	background-color: white;
+}
+
+body, h1 {
+	margin: 0;
+	padding:0;
+}
+
+h1 {
+	float: left;
+	margin-left: 2VW;
+	clear: both;
+	color: white;
+}
+nav {
+	float: right;
+	margin-right: 10Vw;
+}
+
+ul {
+	list-style: none;
+}
+ul li {
+	display: inline-block;
+}
+
+nav ul li a {
+	color: white;
+	margin: 2VW;
+	text-decoration: none;
+}
+
+img {
+	max-width: 150px;
+}
+
+
+
+.frontPageDivs {
+	border-radius: 1.5625em;
+	margin: 0 10Vw;
+	min-height: 10Vw;
+}
+
+#about {
+	background-color: limegreen;
+}
+
+#portfolio {
+	background-color: steelblue;
+}
+
+#contact {
+	background-color: tomato;
+}
+
+/************
+Page: About;
+************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

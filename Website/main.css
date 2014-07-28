@@ -42,8 +42,11 @@ ul li {
 }
 
 nav ul li a {
-	color: white;
 	margin: 2VW;
+}
+
+a {
+	color: white;
 	text-decoration: none;
 }
 
@@ -107,7 +110,7 @@ Page: About;
 /************
 Page: Resume;
 ************/
-h2 {
+#resumeContent h2 {
 	text-align: left;
 	border-bottom: 5px solid black;
 }

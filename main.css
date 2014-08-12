@@ -289,7 +289,7 @@ Page: Future;
 ************/
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
 	h1 {
 		text-align: center;
 	}

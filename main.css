@@ -175,9 +175,14 @@ Page: Portfolio;
 }
 
 #appDesc {
-	float: right;
-	max-width: 40vw;
-	margin-right: 15vw;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	margin-top: -5px;
+}
+#trakr {
+	text-align: center;
+	font-size: 2.5em;
+	width: 100%;
 }
 
 
@@ -232,12 +237,12 @@ Page: Contact;
 }
 #contactLinks li {
 	display: inline-block; 
-	padding: 30px;
+	padding: 3vw;
 	margin: 25Vh 0 35Vh 0;
 }
 
 #contactLinks li img {
-	width: 8vw;
+	width: 80px;
 }
 
 
@@ -307,6 +312,15 @@ Page: Future;
 	}
 
 
+	#contactLinks li {
+	display: block; 
+	margin: 0 auto;
+	padding: 0;
+	}
+
+	#contactLinks li img {
+	width: 50vw;
+	}
 
 }
 

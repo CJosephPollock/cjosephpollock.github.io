@@ -1,0 +1,315 @@
+/*= GENERAL STYLING
+--------------------------------------------------------*/
+
+body{
+	font-family: Raleway;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+h1 { 
+	font-weight:normal;
+	font-size: 55px;
+	text-align: center;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+   font-weight: normal;
+   font-size: 40px;
+   text-align: center;
+   color: #fff;
+   margin: 0;
+	padding: 0;
+}
+
+h3 {
+   font-weight: normal;
+   font-size: 16px;
+   text-align: center;
+   margin: 5px 0;
+	padding: 0;
+	z-index: 1;
+	position: relative;
+}
+
+/*= Slide 1
+--------------------------------------------------------*/
+#blurb, #blurb h1 { color: #000; }
+
+#profile_picture {
+	width: 160px; 
+	height:160px; 
+	border-radius: 85px; 
+	margin: 0 auto;  
+	display: block; 
+	position: relative; 
+	border: 5px solid #111;
+	 box-shadow: 0 2px 3px rgba(0,0,0,.4);
+}
+
+#slide1 {
+	text-align: center;
+}
+
+
+.main-nav {
+	background: #fff;
+  	height: 30px;
+	position: -webkit-sticky;
+	z-index: 150;
+	top: 0px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.4);
+    opacity: 0.8;
+}
+
+.main-nav ul {
+	padding-top: 5px;
+	list-style-type: none;
+	text-align: center;
+	margin-left: -35px;
+}
+
+.main-nav ul li {
+	display: inline;
+}
+
+.main-nav ul li a {
+	text-decoration: none;
+	margin: 0 10px;
+	color: black;
+}
+
+.main-nav ul li a:hover {
+	border-bottom: 2px solid cyan;
+}
+
+
+
+
+
+/*= Slide 2
+--------------------------------------------------------*/
+
+#slide2 h1 {
+	color: black;
+	text-align: left;
+	position: relative;
+}
+
+#slide2 img {
+	margin: 0 auto;
+	width: 4vw;
+	min-width: 40px;
+	position: relative; 
+	border: 2px solid black; 
+	border-radius: 5vw;
+	display: block;
+	box-shadow: 0 2px 3px rgba(0,0,0,.4);
+}
+
+#slide2 h3 {
+	font-size: 20px;
+}
+
+
+
+
+
+
+/*= Slide 3
+--------------------------------------------------------*/
+
+
+
+#slide3 h1 {
+	position: relative;
+	top: -150px;
+	right: 50px;
+	text-align: right;
+}
+
+#slide3  {
+	text-align: center;
+	overflow: scroll;
+}
+
+#slide3 p {
+	text-align: left;
+}
+#slide3 li {
+	display: inline-block;
+	text-align: center;
+	background-color: black;
+}
+
+
+
+#slide3 li:hover img{
+	opacity: 0.3;
+}
+
+#slide3 li img {
+	opacity: 1;
+	transition: opacity 0.5s ease;
+}
+
+.imgWrap {
+  position: relative;
+  height: 45vh;
+}
+
+#slide3 img {
+	height: 45vh;
+}
+
+.text {
+  text-align: left;
+  position: absolute;
+  top: 20px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;  
+  padding: 20px;
+  font-size: 15px;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
+.imgWrap:hover .text {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+
+/*= Slide 4
+--------------------------------------------------------*/
+
+#slide4 {
+	overflow: scroll;
+}
+
+#experiences {
+	margin: 0 auto;
+	width: 95%;
+	padding-top: 25px;
+	color: black;
+	text-align: center;
+	vertical-align: top;
+}
+
+#slide4 h1 {
+	color: black;
+}
+
+#slide4 h2 {
+	font-size: 2vw;
+	color: black;
+}
+
+#slide4 img {
+	max-width: 95%;
+	margin: 0 auto;
+	border-radius: 10px;
+	border: 2px solid black;
+	display: block;
+		 box-shadow: 0 2px 3px rgba(0,0,0,.4);
+}
+
+#slide4 p {
+	text-align: justify;
+	padding: 5px;
+	display: block;
+	margin: 0 auto;
+}
+
+.exp {
+	position: relative;
+	top: 50px;
+	width: 16vw;
+	display: inline-block;
+	margin: 0 1vw;
+}
+
+
+
+
+/*= Slide 5
+--------------------------------------------------------*/
+#slide5 {
+	text-align: center;
+}
+
+#slide5 h1 {
+	color: #009BCD;
+}
+
+#slide5 img {
+	width: 15vw; 
+	max-width: 150px;
+	margin: 15px;
+}
+
+
+/*= SLIDES STYLING
+--------------------------------------------------------*/
+
+
+#slide1{
+	background:url('../img/backgrounds/cherries_blurred.jpg') 50% 0 no-repeat fixed ;
+	color: #fff;
+	height: 90vh;
+	margin: 0;
+	padding: 200px 0 260px 0;
+	background-size: cover;
+}
+
+#slide2{
+	background-color: #fff;
+	background: url('../img/concrete_seamless.png');
+	color: #333333;
+	height: 700px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 25px 0;
+}
+
+#slide3{
+	background: url('../img/backgrounds/desk.jpeg') 50% 0 no-repeat fixed;
+	color: #fff;
+	height: 600px;
+	padding: 170px 0 0 0;	
+	background-size: cover;
+}
+
+#slide4{
+	background-color: #fff;
+	background: url('../img/crossword.png');
+	color: #333333;
+	height: 100vh;
+	padding: 0;
+}
+
+#slide5{
+	background: url('../img/backgrounds/bridge.jpeg') 50% 0 no-repeat fixed;
+	height: 260px;
+	margin: 0 auto;
+	padding: 250px 0;
+	color: #fff;
+	background-size: cover;
+}
+
+/*= MEDIA QUERIES
+--------------------------------------------------------*/

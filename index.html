@@ -1,75 +1,165 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+	   <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       <title>Joe Pollock</title>
+       <link rel="stylesheet" href="css/style.css"/>	
+	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+			
+		<script>
+   
 
-<html>
-<head>
-	<title>Joe Pollock's Portfolio | Home</title>
-	<meta charset="utf-8">
-	<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<style type="text/css">
-	header {
-		border-bottom: 5px solid tomato;
-	}
-	</style>
-</head>
 
-<header>
-	<h1>Joe Pollock's Portfolio</h1></br>
+<!----- JQUERY FOR SLIDING NAVIGATION --->   
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
 
-	<nav>
-		<ul>
-			<li id="NavIndex"><a href="index.html" class="selected">Home</a></li>
-			<li id="NavAbout"><a href="about.html">About</a></li>
-			<li id="NavPortfolio"><a href="portfolio.html">Portfolio</a></li>
-			<li id="navPhotos"><a href="photos.html">Photos</a></li>
-			<li id="navProgress"><a href="progress.html">Planning</a></li>
-			<li id="navFuture"><a href="future.html">Future</a></li>
-			<li id="NavResume"><a href="resume.html">Resume</a></li>
-			<li id="NavContact"><a href="contact.html">Contact</a></li>
+<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+         $(this).click(function() {
+            $(".main-nav ul li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+
+
+</script>
+
+
+ </head> 
+	
+<body>
+   	  <nav class="main-nav">  
+        <ul>
+          <li><a href="#slide2" title="Next Section">About Me</a></li>
+          <li><a href="#slide3" title="Next Section">Portfolio</a></li>
+          <li><a href="#slide4" title="Next Section">Experiences</a></li>
+          <li><a href="#slide5" title="Next Section">Contact</a></li>
+        </ul>
+      </nav>
+
+	<div id="slide1">
+			<div id="slide1content">
+        <img src="img/hs.JPG" id="profile_picture">
+			<div id="blurb">
+				<h1>Joe Pollock</h1>
+				<h3>Sophomore at the University of Washington<br>
+				Aspiring UX Unicorn</h3>
+			</div>
+		</div>
+
+
+    </div> 
+
+	<div id="slide2">
+			<h1>About Me</h1>
+
+		    <img src="img/slide2/sf.svg"><h3>I grew up in San Francisco, California,</h3>
+
+			<img src="img/slide2/uwLogo.png"><h3> toured the University of Washington and </h3>
+
+			<img src="img/slide2/huskyLogo.png"><h3>I became a husky in August of 2013.</h3>
+
+			<img src="img/slide2/compPic.svg"><h3>While I've been here I've spent my fair share of time in Odegaard,</h3> 
+
+			<img src="img/slide2/alpfaLogo.png"> <h3>became the Chief Technical Officer of the Association of Latino Professionals in Finance and Accounting,</h3>
+
+			<img src="img/slide2/iSchoolLogo.png"><h3>and hope to major in informatics.  </h3>
+		
+			<img src="img/slide2/future.svg"><h3>I can't wait to see whats next!</h3>
+    </div> 
+	
+	
+   	<div id="slide3">
+   		<h1>Portfolio</h1>
+   		<ul>
+   			<a href="https://www.google.com"><li class="imgWrap">
+   				<img src="img/slide3/Info200Infographic.png">
+   				<p class="text"><span class="title">Informatics 200 Infographic</span><br>This was the final project for my Informatics 200 class, which won "Best Poster" at the presentation.  The project was to describe an information resource, in our case "GroShary" the grocery sharing app for roommates.  I acted as the leader of my group and we went through the design process together.  I ended up making the final design of the poster in Adobe Illustrator.  This was my first exposure to Illustrator and I truly learned from doing as well as valuable leadership and communication skills.</p>
+   			</li></a>
+
+   			<a href=""><li class="imgWrap">
+   				<img src="img/slide3/EarthPoster.png">
+   				<p class="text"><span class="title">Earth Poster</span><br> This poster was the first in a series
+   					I recently completed.  The purpose of the series is to create attractive infographics to serve as public outreach for the Astronomy department at the University of Washington. </p>
+   			</li></a>
+   			
+   			<a href=""><li class="imgWrap">
+   				<img src="img/slide3/SolarSystemPoster.png">
+    			<p class="text"><span class="title">Solar System Poster</span><br> This is the second poster I made for the Astronomy Department's public outreach series, depicting the Solar System.  The entire series will be printed and displayed in the Physics and Astronomy building on the University of Washington Seattle campus.   </p>
+  			</li></a>
+   			
+   			<a href=""><li class="imgWrap">
+   				<img src="img/slide3/MilkyWay.png">
+	   			<p class="text"><span class="title">Milky Way Poster</span><br>The third poster I made for the Astronomy department's public outreach series depics the Milky Way, the galaxy containing our Solar System. To see the rest of the posters in the series, click on any of the Astronomy infographics!</p>
+   			</li></a>
 		</ul>
-	</nav>
-</header>
+    </div> 
+	
+	
+	<div id="slide4">
+		<div id="experiences">
+			<h1>Experiences</h1>
+			<div class="exp">
+   				<img src="img/slide4/or.jpg">
+   				<h2>Operating Room</h2>
+   				<p>I had the opportunity to assist doctors during surgeries in Nuevo Progreso, Guatemala. This is a picture of the incredible staff I worked with in the operating room.</p>
+   			</div>
+			<div class="exp">
+				<img src="img/slide4/aisce.jpg">
+				<h2>AISCE</h2>
+				<p>I have mentored at risk youth in Oakland, California as a member of the The Academy of Integrated Studies and Community Engagement ("Ace").  In this forward thinking program, we worked to curb gang recruitment and expose our mentees to opportunities available to them.</p>
+			</div>
+			<div class="exp">
+				<img src="img/slide4/mexico.jpg">
+   				<h2>Mexico Team Building</h2>
+   				<p>As part of a team of over 500, I helped in the construction of over 30 houses in Tijuana, Mexico.  Part of what made the trip so special was the opportunity to work alongside the family who would eventually live in the house and build relationships with my peers.</p>
+   			</div>
+			<div class="exp">
+				<img src="img/slide4/housebuilding.jpg">
+   				<h2>Mexico House Building</h2>
+   				<p>This photo was taken on the third, and second to last, day of construction.  It is truly incredible how quickly we can build a home for a family and what a profound impact that will have on their lives.</p>
+   			</div>
+   			<div class="exp">
+				<img src="img/slide4/drteam.jpg">
+   				<h2>Doctors</h2>
+   				<p>On the first morning of our medical mission at Hospital de la Familia in Nuevo Progreso, Guatemala. Beside me are several members of the staff that helped perform over 50 surgeries, and remove cataracts restoring the eyesight of over 100 people.</p>
+   			</div>
+    	</div>
+    </div> 
+	
 
-<body id="homePage">
-	<a href="about.html"><div class="frontPageDivs" id="about">
-		<h2>A little bit about me...</h2>
-		<img src="img/information.svg">
-		<p>My name is Joe Pollock.  I was born and rasied in the San Francisco Bay Area.  I am currently a sophomore at the University of Washington in Seattle.</p>
-	</div></a>
-
-	<a href="portfolio.html"><div class="frontPageDivs" id="portfolio">
-		<h2>A few things I've done...</h2>
-		<img src="img/projects.svg">
-		<p>Before learning web development, I was an avid iOS developer.  Check out my most notable projects!</p>
-	</div></a>
-
-	<a href="contact.html"><div class="frontPageDivs" id="contact">
-		<h2>Don't be a stranger!</h2>
-		<img src="img/contactIcon.svg">
-		<p>Don't hesitate to contact me! Keep in mind I am a full time student but I will do my best to respond to any questions as soon as possible! </p>
-	</div></a>
-
-<footer>
-	&copy2014, Joe Pollock
-</footer>
+	
+	<div id="slide5">
+           	<h1>Don't be a stranger</h1> 
+           	<a href="mailto:cjosephpollock@gmail.com">
+           		<img src="img/slide5/Email.svg">
+           	</a>
+           	<a href="https://www.facebook.com/joe.pollock.336">
+           		<img src="img/slide5/Facebook.svg">
+           	</a>
+           	<a href="https://www.linkedin.com/in/cjpollock">
+           		<img src="img/slide5/LinkedIn.svg">
+           	</a>
+           	<a href="https://twitter.com/cjosephpollock">
+           		<img src="img/slide5/Twitter.svg">
+           	</a>
+           	<a href="https://github.com/CJosephPollock">
+           		<img src="img/slide5/Github.svg">
+           	</a>
+    </div> 
 </body>
-
-
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
